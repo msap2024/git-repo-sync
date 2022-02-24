@@ -12,9 +12,9 @@ jobs:
     - uses: actions/checkout@v2
       with:
         fetch-depth: 0
-    - uses: msap2024/git-repo-sync.git
+    - uses: msap2024/git-repo-sync.git@0.1.0
       with:
-        # Such as https://github.com/wangchucheng/git-repo-sync.git
+        # Such as https://github.com/wangchucheng/git-repo-sync.git@0.1.0
         target-url: ${{ secrets.TARGET_URL }}
         # Such as wangchucheng
         target-username: ${{ secrets.TARGET_USERNAME }}
